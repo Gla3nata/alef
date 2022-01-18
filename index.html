@@ -12,10 +12,11 @@
 <body>
     <header class="header">
         <div class="container">
-            <a class="logo" href="index.html">
+            <div class="header__inner">
+                <a class="logo" href="index.html">
                 <span class="logo-link-text">LOGO</span>
             </a>
-            <div class="header__buttons">
+            <div class="header__btns">
                 <a class="person" href="#">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="8.45945" cy="4.18919" r="3.68919" stroke="#333333" />
@@ -55,17 +56,33 @@
                     </li>
                 </ul>
             </nav>
+            </div>
         </div>
     </header>
     <main class="main">
         <div class="container">
             <div class="content">
                 <div class="content__img">
-                    <img class="content__img-big" src="/image/pajama-1.jpg" alt="Пижама">
-                    <img class="content__img-small" src="/image/pajama-2.jpg" alt="Пижама">
-                    <img class="content__img-small" src="/image/pajama-3.jpg" alt="Пижама">
-                    <img class="content__img-small" src="/image/pajama-4.jpg" alt="Пижама">
-                    <img class="content__img-small" src="/image/pajama-5.jpg" alt="Пижама">
+                    <div class="content__img-big">
+                        <img src="/image/pajama-1.jpg" alt="Пижама">
+                    </div>
+                    <div class="content__img-mini">
+                        <div class="content__img-small">
+                        <img src="/image/pajama-1.jpg" alt="Пижама">
+                    </div>
+                    <div class="content__img-small">
+                        <img src="/image/pajama-2.jpg" alt="Пижама">
+                    </div>
+                    <div class="content__img-small">
+                        <img src="/image/pajama-3.jpg" alt="Пижама">
+                    </div>
+                    <div class="content__img-small">
+                        <img src="/image/pajama-4.jpg" alt="Пижама">
+                    </div>
+                    <div class="content__img-small">
+                        <img src="/image/pajama-5.jpg" alt="Пижама">
+                    </div>
+                    </div>                   
                 </div>
                 <div class="content__description">
                     <div class="product">
@@ -73,8 +90,9 @@
                             <h1 class="product__title">Пижама для девочек</h1>
                             <p class="product__art">Арт. 02765/46</p>
                             <div class="product__review">
-                                Отзывы
-                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 Отзывы
+                                <div class="product__review-stars">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6 8.635L9.09 10.5L8.27 6.985L11 4.62L7.405 4.315L6 1L4.595 4.315L1 4.62L3.73 6.985L2.91 10.5L6 8.635Z" fill="#333333" />
                                 </svg>
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,10 +104,13 @@
                                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M6 8.635L9.09 10.5L8.27 6.985L11 4.62L7.405 4.315L6 1L4.595 4.315L1 4.62L3.73 6.985L2.91 10.5L6 8.635Z" fill="#333333" />
                                 </svg>
-                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5 2.565L5.485 3.71L5.72 4.265L6.32 4.315L7.555 4.42L6.615 5.235L6.16 5.63L6.295 6.22L6.575 7.425L5.515 6.785L5 6.465L4.485 6.775L3.425 7.415L3.705 6.21L3.84 5.62L3.385 5.225L2.445 4.41L3.68 4.305L4.28 4.255L4.515 3.7L5 2.565ZM5 0L3.595 3.315L0 3.62L2.73 5.985L1.91 9.5L5 7.635L8.09 9.5L7.27 5.985L10 3.62L6.405 3.315L5 0Z" fill="#333333" />
-                                </svg>
-                                <span class="product__review-count">14</span> отзывов
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6 3.565L6.485 4.71L6.72 5.265L7.32 5.315L8.555 5.42L7.615 6.235L7.16 6.63L7.295 7.22L7.575 8.425L6.515 7.785L6 7.465L5.485 7.775L4.425 8.415L4.705 7.21L4.84 6.62L4.385 6.225L3.445 5.41L4.68 5.305L5.28 5.255L5.515 4.7L6 3.565V3.565ZM6 1L4.595 4.315L1 4.62L3.73 6.985L2.91 10.5L6 8.635L9.09 10.5L8.27 6.985L11 4.62L7.405 4.315L6 1Z" fill="#333333"/>
+</svg>
+
+                                </div>
+                                <span class="product__review-count">14</span> 
+                                <span class="product__review-text"> отзывов</span>
                                 <a class="content__review-link" href="#">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M8 5L16 12L8 18.5" stroke="#333333" />
@@ -98,14 +119,15 @@
                             </div>
                         </div>
                         <div class="product__price">
-                            <p class="product__old-price">800 p</p>
-                            <p class="product__new-price">1 500 ₽</p>
+                            <p class="product__new-price">800&nbsp;₽</p>
+                            <p class="product__old-price">1&nbsp;500&nbsp;₽</p>
                             <a class="product__price-order" href="#">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M8 5L16 12L8 18.5" stroke="#333333" />
                                 </svg>
                             </a>
-                            <div class="product__coupons">
+                        </div>
+                        <div class="product__coupons">
                                 <div class="product__coupons-discount">
                                     скидка -36%
                                 </div>
@@ -113,13 +135,10 @@
                                     акция -20%
                                 </div>
                             </div>
-                        </div>
                         <div class="product__parameters">
-                            <div class="product__size">
-                                Выбрать размер
-                            </div>
-                            <div class="product__table-sizes">
-                                <button class="product__table-sizes__btn">Определить размер</button>
+                                 <input class="product__size" type="text"  value="Выбрать размер">
+                            <div class="product__table">
+                                <button class="product__table-sizes">Определить размер</button>
                             </div>
                             <div class="product__order">
                                 <div class="product__quantity quantity">
@@ -138,16 +157,16 @@
                                     </svg>
 
                                 </button>
-                                <button class="product__order-click">
+                            </div>
+                             <button class="product__order-click">
                                     Купить в 1 клик
                                 </button>
-                            </div>
                         </div>
                     </div>
                     <div class="product__details">
-                        <a class="product__description" href="#"></a>
-                        <a class="product__delivery" href="#"></a>
-                        <a class="product__pay" href="#"></a>
+                        <a class="product__description" href="#">Описание товара</a>
+                        <a class="product__delivery" href="#">Доставка и возврат</a>
+                        <a class="product__pay" href="#">Способы оплаты</a>
                     </div>
                 </div>
             </div>
