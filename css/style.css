@@ -295,7 +295,10 @@ button {
 .product__order-click {
   margin-bottom: 20px;
   letter-spacing: 0.04em;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #616161;
+  line-height: .7;
+  padding: 0;
+  color: #333333;
 }
 
 .product__order-btn,
@@ -311,4 +314,33 @@ button {
 .product__order-like {
   width: 44px;
   height: 44px;
+}
+
+.product__details-description, .product__details-delivery, .product__details-pay {
+  position: relative;
+  padding-left: 25px;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid #616161;
+  line-height: .7;
+}
+
+.product__details-description::before, .product__details-delivery::before, .product__details-pay::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+}
+
+.product__details-description::before {
+  background: url(../image/icon-descr.svg) 50% 50% no-repeat;
+}
+
+.product__details-delivery::before {
+  background: url(../image/icon-delivery.svg) 50% 50% no-repeat;
+}
+
+.product__details-pay::before {
+  background: url(../image/icon-pay.svg) 50% 50% no-repeat;
 }
