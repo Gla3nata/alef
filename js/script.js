@@ -36,3 +36,25 @@ window.addEventListener('scroll', function (e) {
         ticking = true;
     }
 });
+
+function plusFunction() {
+    console.log(this);
+}
+
+document.addEventListener('click', function (e) {
+    if (e.target.classList.contains("increase")) {
+        ++e.target.parentElement.querySelector("input").value;
+    } else if (e.target.classList.contains("decrease")) {
+        --e.target.parentElement.querySelector("input").value;
+    }
+});
+
+const menuBtn = document.querySelector('.menu__btn');
+if (menuBtn) {
+    const menuBody = document.querySelector('.menu__body');
+    menuBtn.addEventListener("click", function name(e) {
+        menuBtn.classList.toggle('_active')
+        menuBody.classList.toggle('_active')
+    })
+    console.log(menuBtn);
+}
