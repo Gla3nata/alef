@@ -14,31 +14,32 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <a class="logo" href="index.html">
-                    <span class="logo-link-text">LOGO</span>
-                </a>
-                <div class="header__btns">
-                    <a class="person" href="#">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="8.45945" cy="4.18919" r="3.68919" stroke="#333333" />
-                            <path d="M0.5 15.3379H15.5" stroke="#333333" />
-                            <path d="M0.5 15.84C0.5 12.4347 4.84699 9.91339 8.21429 10.0023C11.4328 10.0872 15.5 12.4347 15.5 15.84" stroke="#333333" />
-                        </svg>
+                <div class="header__top">
+                    <a class="logo" href="index.html">
+                        <span class="logo-link-text">LOGO</span>
                     </a>
-                    <a class="favorite" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.9 7.0948C10.6998 1.47892 1.40881 5.90389 5.76037 11.6018C10.1119 17.2996 12.4 19.4908 12.4 19.4908" stroke="#333333" />
-                            <path d="M11.8941 7.0948C13.0944 1.47892 22.7304 5.90389 18.3789 11.6018C14.0273 17.2996 11.7 19.5 11.7 19.5" stroke="#333333" />
-                            <path d="M11.391 6.70752L12.4043 6.70757L12.3834 7.24079H11.391V6.70752Z" fill="#333333" />
-                        </svg>
-                    </a>
-                    <a class="basket" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.25468 10.5659C5.13958 9.11201 6.2884 7.86865 7.74689 7.86865H16.2531C17.7116 7.86865 18.8604 9.11201 18.7453 10.566L18.2203 17.1975C18.1174 18.4977 17.0323 19.5002 15.7281 19.5002H8.27189C6.96769 19.5002 5.88261 18.4977 5.77968 17.1975L5.25468 10.5659Z" stroke="#333333" />
-                            <path d="M7.99999 12.5C7.99999 12.5 7.78329 4 12 4C16.2167 4 16 12.5 16 12.5" stroke="#333333" />
-                        </svg>
-                    </a>
+                    <div class="header__btns">
+                        <a class="person" href="#">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="8.45945" cy="4.18919" r="3.68919" stroke="#333333" />
+                                <path d="M0.5 15.3379H15.5" stroke="#333333" />
+                                <path d="M0.5 15.84C0.5 12.4347 4.84699 9.91339 8.21429 10.0023C11.4328 10.0872 15.5 12.4347 15.5 15.84" stroke="#333333" />
+                            </svg>
+                        </a>
+                        <a class="favorite" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.9 7.0948C10.6998 1.47892 1.40881 5.90389 5.76037 11.6018C10.1119 17.2996 12.4 19.4908 12.4 19.4908" stroke="#333333" />
+                                <path d="M11.8941 7.0948C13.0944 1.47892 22.7304 5.90389 18.3789 11.6018C14.0273 17.2996 11.7 19.5 11.7 19.5" stroke="#333333" />
+                                <path d="M11.391 6.70752L12.4043 6.70757L12.3834 7.24079H11.391V6.70752Z" fill="#333333" />
+                            </svg>
+                        </a>
+                        <a class="basket" href="#"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.25468 10.5659C5.13958 9.11201 6.2884 7.86865 7.74689 7.86865H16.2531C17.7116 7.86865 18.8604 9.11201 18.7453 10.566L18.2203 17.1975C18.1174 18.4977 17.0323 19.5002 15.7281 19.5002H8.27189C6.96769 19.5002 5.88261 18.4977 5.77968 17.1975L5.25468 10.5659Z" stroke="#333333" />
+                                <path d="M7.99999 12.5C7.99999 12.5 7.78329 4 12 4C16.2167 4 16 12.5 16 12.5" stroke="#333333" />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="menu">
+                <div class="menu">
                     <button class="menu__btn">
                         <span></span>
                     </button>
@@ -59,6 +60,7 @@
                     </ul>
                  </nav>
                 </div>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -363,7 +365,7 @@
                         <label class="subscription" for="email">Узнайте первыми о новинках и акциях</label>
                          <div class="subscription__input-wrapper">
                              <input class="mail" type="email" id="email" required placeholder="Адрес электронной почты">
-                         <button class="btn-cancel" type="cancel">
+                         <button class="btn-cancel">
                              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                  <path d="M0.700012 9.06641L9.05007 0.88337" stroke="#C4C4C4"/>
                                  <path d="M9.25165 9.06641L0.901606 0.883353" stroke="#C4C4C4"/>
@@ -376,7 +378,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
-<script src="js/script.js"></script>
-
 </html>

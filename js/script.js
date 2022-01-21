@@ -20,8 +20,6 @@ function doSomething(scrollPos) {
     } else {
         document.getElementsByClassName('header')[0].style.opacity = "1";
     }
-
-    // Делаем что-нибудь с позицией скролла
 }
 
 window.addEventListener('scroll', function (e) {
@@ -32,29 +30,39 @@ window.addEventListener('scroll', function (e) {
             doSomething(lastPosition);
             ticking = false;
         });
-
         ticking = true;
     }
 });
 
-function plusFunction() {
-    console.log(this);
-}
+
 
 document.addEventListener('click', function (e) {
-    if (e.target.classList.contains("increase")) {
-        ++e.target.parentElement.querySelector("input").value;
-    } else if (e.target.classList.contains("decrease")) {
-        --e.target.parentElement.querySelector("input").value;
+    if (e.target.classList.contains('increase')) {
+        ++e.target.parentElement.querySelector('input').value;
+    } else if (e.target.classList.contains('decrease')) {
+        --e.target.parentElement.querySelector('input').value;
     }
 });
 
-const menuBtn = document.querySelector('.menu__btn');
-if (menuBtn) {
-    const menuBody = document.querySelector('.menu__body');
-    menuBtn.addEventListener("click", function name(e) {
-        menuBtn.classList.toggle('_active')
-        menuBody.classList.toggle('_active')
-    })
-    console.log(menuBtn);
+const btnMenu = document.querySelector('.menu__btn');
+const menu = document.querySelector('.menu__body');
+const toggleMenu = function() {
+    menu.classList.toggle('_active')
+    btnMenu.classList.toggle('_active');
 }
+
+btnMenu.addEventListener('click', function(e) {
+    e.stopPropagation();
+    toggleMenu();
+});
+
+document.addEventListener('click', function(e) {
+    const target = e.target;
+    const its_menu = target == menu || menu.contains(target);
+    const its_btnMenu = target == btnMenu;
+    const menu_is_active = menu.classList.contains('_active');
+    
+    if (!its_menu && !its_btnMenu && menu_is_active) {
+        toggleMenu();
+    }
+});
